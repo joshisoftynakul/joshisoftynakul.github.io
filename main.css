@@ -18,6 +18,86 @@ html, body{
     font-size: 1.1rem;
     letter-spacing: -0.5px;
 }
+.glitch:before, .glitch:after {
+    display: block;
+    content: 'Nakul Joshi';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    color: #c9c9c9;
+  }
+  .glitch:after {
+    color: #c9c9c9;
+    z-index: -2;
+  }
+  .glitch:before {
+    color: #c9c9c9;
+    z-index: -1;
+  }
+  .glitch:hover:before {
+    -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+            animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  .glitch:hover:after {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+  @-webkit-keyframes glitch {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-5px, 5px);
+      transform: translate(-5px, 5px);
+    }
+    40% {
+      -webkit-transform: translate(-5px, -5px);
+      transform: translate(-5px, -5px);
+    }
+    60% {
+      -webkit-transform: translate(5px, 5px);
+      transform: translate(5px, 5px);
+    }
+    80% {
+      -webkit-transform: translate(5px, -5px);
+      transform: translate(5px, -5px);
+    }
+    to {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-5px, 5px);
+      transform: translate(-5px, 5px);
+    }
+    40% {
+      -webkit-transform: translate(-5px, -5px);
+      transform: translate(-5px, -5px);
+    }
+    60% {
+      -webkit-transform: translate(5px, 5px);
+      transform: translate(5px, 5px);
+    }
+    80% {
+      -webkit-transform: translate(5px, -5px);
+      transform: translate(5px, -5px);
+    }
+    to {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+  }
+  
 #main_text{
     color: #9f99e6; 
     font-size: 2.9rem;
@@ -36,6 +116,9 @@ html, body{
     display: inline-block;
     padding-right: 8px;
     font-size: 1.1rem;
+}
+#link_ul a:hover{
+    color: #cfcfcf;
 }
 #link_ul a{
     color: #4d4949;
