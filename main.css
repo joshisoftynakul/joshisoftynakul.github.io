@@ -1,4 +1,4 @@
-html{
+html, body{
     background: #181818;
     font-size: 1em;
     font-family: Circular Std;
@@ -110,7 +110,7 @@ html{
     }
   }
 
-  @-webkit-keyframes colorchange2 {
+@-webkit-keyframes colorchange2 {
     0% {
       background-color: #e699a6;
     }
@@ -163,4 +163,17 @@ html{
       
         background-color: #e69999;
     }
-  }
+}
+
+  @media screen and (max-width: 600px) {
+    #main_text{
+        font-size: 1.3rem;
+    }
+    #head_name{
+        font-size: 0.7rem;
+    }
+    #link_ul li{
+        font-size: 0.9rem;
+        display: block;
+    }
+}
