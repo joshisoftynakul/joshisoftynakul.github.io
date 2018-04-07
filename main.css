@@ -1,0 +1,166 @@
+html{
+    background: #181818;
+    font-size: 1em;
+    font-family: Circular Std;
+    margin: 0;
+    padding: 0;
+}
+.containerr{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+}
+
+#head_name{
+    color: #c9c9c9;
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+}
+#main_text{
+    color: #9f99e6; 
+    font-size: 2.9rem;
+    letter-spacing: -0.9px;
+    font-weight: 700;
+    max-width: 100%;
+}
+#link_ul{
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+#link_ul li{
+    color: #4d4949;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 8px;
+    font-size: 1.1rem;
+}
+#link_ul a{
+    color: #4d4949;
+    text-decoration: none;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    background-color: #9f99e6;
+    width: 100%;
+    height: 7%;;
+}
+#main_text{
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+.foot{
+    -webkit-animation: colorchange2 20s infinite alternate;
+
+}
+@-webkit-keyframes colorchange {
+    0% {
+      color: #e699a6;
+    }
+    
+    10% {
+      
+      color: #e699d2;
+    }
+    
+    20% {
+      
+      color: #cc99e6;
+    }
+    
+    30% {
+      
+      color: #9f99e6;
+    }
+    
+    40% {
+      
+      color:#99bfe6;
+    }
+    
+    50% {
+      
+      color: #99e6df;
+    }
+    
+    60% {
+      
+      color: #99e6b3;
+    }
+    
+    70% {
+      
+      color: #ace699;
+    }
+    80% {
+   
+      color: #d9e699;
+    }
+    
+    90% {
+   
+      color: #e6c699;
+    }
+    
+    100% {
+      
+      color: #e69999;
+    }
+  }
+
+  @-webkit-keyframes colorchange2 {
+    0% {
+      background-color: #e699a6;
+    }
+    
+    10% {
+      
+        background-color: #e699d2;
+    }
+    
+    20% {
+      
+        background-color: #cc99e6;
+    }
+    
+    30% {
+      
+        background-color: #9f99e6;
+    }
+    
+    40% {
+      
+        background-color:#99bfe6;
+    }
+    
+    50% {
+      
+        background-color: #99e6df;
+    }
+    
+    60% {
+      
+        background-color: #99e6b3;
+    }
+    
+    70% {
+      
+        background-color: #ace699;
+    }
+    80% {
+   
+        background-color: #d9e699;
+    }
+    
+    90% {
+   
+        background-color: #e6c699;
+    }
+    
+    100% {
+      
+        background-color: #e69999;
+    }
+  }
